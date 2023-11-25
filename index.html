@@ -2,14 +2,15 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Missão da Empresa</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Qual sua energia?</title>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="script.js" defer></script>
 </head>
 
-<body>
+<body style="padding-bottom: 70px">
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="nav-link" href="index.html">Qual a sua energia?</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent1">
@@ -21,10 +22,40 @@
     </ul>
   </div>
 </nav>
-<div class="jumbotron">
-  <h1 class="display-4">Drebec</h1>
-  <p class="lead">Objetivo da empresa: com poucas informações, indicar ao usuário a forma de obtenção de energia limpa mais indicada, baseada em geolocalização, tipo de residência, clima, de forma mais assertiva possível, e conectar a fornecedores do método selecionado. Os fornecedores são empresas parceiras reconhecidas no mercado e selecionadas criteriosamente. A utilização dessas formas de obtenção de energia são além da economia, a maneira mais eficiente e sustentável.</p>
-</div>
+<form method="get" action=".">
+  <div class="row">
+    <div class="form-group col-4">
+      <label for="cep">Cep</label>
+      <input type="text" class="form-control" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);">
+    </div>
+    <div class="form-group col-4">
+      <label for="nome">Rua</label>
+      <input type="text" onClick="pesquisacep()" class="form-control" id="rua" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-4">
+      <label for="areaatuacao">Bairro</label>
+      <input type="text" class="form-control" id="bairro" disabled>
+    </div>
+    <div class="form-group col-4">
+      <label for="areaatuacao">Cidade</label>
+      <input type="text" class="form-control" id="cidade" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-4">
+      <label for="areaatuacao">Estado</label>
+      <input type="text" class="form-control" id="uf" disabled>
+    </div>
+    <div>
+      <p></p>
+      <button type="submit" onClick="#" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+</form>
+
 <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand">Drebec</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent2">
@@ -36,5 +67,8 @@
     </form>
   </div>
 </nav>
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
 </body>
 </html>
