@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Qual sua energia?</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./styles/style.css"
+            media="screen"
+        />
+        <link
+            href="./styles/bootstrap-4.4.1.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./scripts/script.js" defer></script>
+    </head>
+
+    <body style="padding-bottom: 70px">
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="nav-link" href="index.html">Qual a sua energia?</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent1"
+                >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                                >Home <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="quem-somos.html"
+                                >Quem Somos
+                                <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="missao-da-empresa.html"
+                                >Missão da Empresa
+                                <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="fontes-renovaveis.html"
+                                >Fontes Renováveis
+                                <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <form method="get" action=".">
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label for="cep">Cep</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="cep"
+                            value=""
+                            size="10"
+                            maxlength="9"
+                            onblur="pesquisacep(this.value);"
+                        />
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="nome">Rua</label>
+                        <input
+                            type="text"
+                            onClick="pesquisacep()"
+                            class="form-control"
+                            id="rua"
+                            disabled
+                        />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label for="areaatuacao">Bairro</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="bairro"
+                            disabled
+                        />
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="areaatuacao">Cidade</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="cidade"
+                            disabled
+                        />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label for="areaatuacao">Estado</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="uf"
+                            disabled
+                        />
+                    </div>
+                    <div>
+                        <p></p>
+                        <button
+                            type="submit"
+                            onClick="#"
+                            class="btn btn-primary"
+                        >
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="form-check col-2">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 576 512"
+                        >
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                            />
+                        </svg>
+                        Casa
+                    </label>
+                </div>
+                <div class="form-check col-2">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 384 512"
+                        >
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h96c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"
+                            />
+                        </svg>
+                        Apartamento
+                    </label>
+                </div>
+                <div class="form-check col-3">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault3"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        <i class="fa-solid fa-tractor"></i>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 640 512"
+                        >
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M96 64c0-35.3 28.7-64 64-64H266.3c26.2 0 49.7 15.9 59.4 40.2L373.7 160H480V126.2c0-24.8 5.8-49.3 16.9-71.6l2.5-5c7.9-15.8 27.1-22.2 42.9-14.3s22.2 27.1 14.3 42.9l-2.5 5c-6.7 13.3-10.1 28-10.1 42.9V160h56c22.1 0 40 17.9 40 40v45.4c0 16.5-8.5 31.9-22.6 40.7l-43.3 27.1c-14.2-5.9-29.8-9.2-46.1-9.2c-39.3 0-74.1 18.9-96 48H352c0 17.7-14.3 32-32 32h-8.2c-1.7 4.8-3.7 9.5-5.8 14.1l5.8 5.8c12.5 12.5 12.5 32.8 0 45.3l-22.6 22.6c-12.5 12.5-32.8 12.5-45.3 0l-5.8-5.8c-4.6 2.2-9.3 4.1-14.1 5.8V480c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32v-8.2c-4.8-1.7-9.5-3.7-14.1-5.8l-5.8 5.8c-12.5 12.5-32.8 12.5-45.3 0L40.2 449.1c-12.5-12.5-12.5-32.8 0-45.3l5.8-5.8c-2.2-4.6-4.1-9.3-5.8-14.1H32c-17.7 0-32-14.3-32-32V320c0-17.7 14.3-32 32-32h8.2c1.7-4.8 3.7-9.5 5.8-14.1l-5.8-5.8c-12.5-12.5-12.5-32.8 0-45.3l22.6-22.6c9-9 21.9-11.5 33.1-7.6V192 160 64zm170.3 0H160v96h32H304.7L266.3 64zM176 256a80 80 0 1 0 0 160 80 80 0 1 0 0-160zM528 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm0 64c-48.6 0-88-39.4-88-88c0-29.8 14.8-56.1 37.4-72c14.3-10.1 31.8-16 50.6-16c2.7 0 5.3 .1 7.9 .3c44.9 4 80.1 41.7 80.1 87.7c0 48.6-39.4 88-88 88z"
+                            />
+                        </svg>
+                        Sítio/Chácara/Fazenda
+                    </label>
+                </div>
+                <br />
+                <br />
+            </div>
+            <div class="image">
+                <div>
+                    <img
+                        src="./images/energia-solar-vetorial.jpg"
+                        alt="energia solar"
+                        width="299"
+                        height="300"
+                        class="image img-fluid rounded"
+                    />
+                </div>
+                <div>
+                    <img
+                        src="./images/energia-eolica-vetorial.jpg"
+                        alt="energia eólica"
+                        width="369"
+                        height="300"
+                        class="image img-fluid rounded"
+                    />
+                </div>
+                <div>
+                    <img
+                        src="./images/biomassa-vetorial.jpg"
+                        alt="energia biomassa"
+                        width="299"
+                        height="300"
+                        class="image rounded img-fluid"
+                    />
+                </div>
+            </div>
+            <nav
+                class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light"
+            >
+                <a class="navbar-brand">Drebec</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent2"
+                    aria-controls="navbarSupportedContent2"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent2"
+                >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link"
+                                href="seja-uma-empresa-parceira.html"
+                                >Seja uma empresa parceira<span class="sr-only"
+                                    >(current)</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a class="nav-item">
+                            <a class="nav-link disabled">Siga-nos!</a></a
+                        >
+                        <img
+                            src="images/instagram1.jpg "
+                            alt="instagram"
+                            width="30"
+                            class="img-fluid"
+                            id="instagram"
+                        />
+                        <img
+                            src="images/linkedin.png"
+                            alt="linked-in"
+                            width="30"
+                            class="img-fluid"
+                            id="linkedin"
+                        />
+                        <img
+                            src="images/email.png"
+                            alt="email"
+                            width="30"
+                            class="img-fluid"
+                            id="email"
+                        />
+                    </form>
+                </div>
+            </nav>
+            <script src="./scripts/jquery-3.4.1.min.js"></script>
+            <script src="./scripts/popper.min.js"></script>
+            <script src="./scripts/bootstrap-4.4.1.js"></script>
+        </main>
+    </body>
+</html>
