@@ -489,7 +489,8 @@ footer .footerNote span {
 		font-family: sans-serif;
 	}
 }
-.sectionTitle{
+
+.sectionTitle {
 	font-style: color #131212;
 }
 
@@ -499,7 +500,7 @@ footer .footerNote span {
 }
 
 .home-image {
-    object-fit: cover;
-    object-position: 0 66%;
-    height: 400px;
+	object-fit: cover;
+	object-position: 0 66%;
+	height: 400px;
 }
