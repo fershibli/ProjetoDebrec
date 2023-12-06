@@ -485,6 +485,7 @@ footer .footerNote span {
 	}
 }
 
-.image {
+.container-energias-calculadas {
 	display: flex;
+	justify-content: space-evenly;
 }
