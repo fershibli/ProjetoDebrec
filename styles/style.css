@@ -497,3 +497,9 @@ footer .footerNote span {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+.home-image {
+    object-fit: cover;
+    object-position: 0 66%;
+    height: 400px;
+}
