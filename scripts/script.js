@@ -63,3 +63,13 @@ function limpa_formulário_cep() {
             limpa_formulário_cep();
         }
     }
+
+    function mostra_mensagem() {
+        const alert_sucesso = document.getElementById('mensagem');
+        const class_list = alert_sucesso.className.split(' ');
+        if (class_list[class_list.length -1]=='d-none'){
+
+            class_list.pop()
+            alert_sucesso.className = class_list.join(' ')
+        }
+    }
