@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <main>
+        <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="nav-link" href="calculadora.html">Qual a sua energia?</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -40,7 +40,9 @@
                     </ul>
                 </div>
             </nav>
-            <form method="get" action=".">
+        </header>
+        <main>
+            <form>
                 <div class="row">
                     <div class="form-group col-4">
                         <label for="cep">Cep</label>
@@ -66,12 +68,6 @@
                     <div class="form-group col-4">
                         <label for="areaatuacao">Estado</label>
                         <input type="text" class="form-control" id="uf" disabled />
-                    </div>
-                    <div>
-                        <p></p>
-                        <button type="submit" onClick="#" class="btn btn-primary">
-                            Enviar
-                        </button>
                     </div>
                 </div>
             </form>
@@ -141,6 +137,11 @@
                 <br />
                 <br />
             </div>
+            <div class="calculcadora-envio">
+                <button type="submit" class="btn btn-primary">
+                    Enviar
+                </button>
+            </div>
 
 
             <div class="row">
@@ -158,41 +159,43 @@
                             class="image rounded" />
                     </div>
                 </div>
-                <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand">Drebec</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="seja-uma-empresa-parceira.html">Seja uma empresa parceira<span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <a class="nav-item">
-                                <a class="nav-link disabled">Siga-nos!</a></a>
-                            <a href="https://www.instagram.com/drebecmacroprotech/" target="_blank">
-                                <img src="images/instagram1.jpg " alt="instagram" width="30" class="img-fluid"
-                                    id="instagram" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/drebec-macroprotech-b6481a2a2/" target="_blank">
-                                <img src="images/linkedin.png" alt="linked-in" width="30" class="img-fluid"
-                                    id="linkedin" />
-                            </a>
-                            <a href="mailto:macroprotech@outlook.com">
-                                <img src="images/email.png" alt="email" width="30" class="img-fluid" id="email" />
-                            </a>
-                        </form>
-                    </div>
-                </nav>
-                <script src="./scripts/jquery-3.4.1.min.js"></script>
-                <script src="./scripts/popper.min.js"></script>
-                <script src="./scripts/bootstrap-4.4.1.js"></script>
         </main>
+        <footer>
+            <nav class="navbar fixed-bottom navbar-expand navbar-light bg-light">
+                <a class="navbar-brand">Drebec</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="seja-uma-empresa-parceira.html">Seja uma empresa parceira<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a class="nav-item">
+                            <a class="nav-link disabled">Siga-nos!</a></a>
+                        <a href="https://www.instagram.com/drebecmacroprotech/" target="_blank">
+                            <img src="images/instagram1.jpg " alt="instagram" width="30" class="img-fluid"
+                                id="instagram" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/drebec-macroprotech-b6481a2a2/" target="_blank">
+                            <img src="images/linkedin.png" alt="linked-in" width="30" class="img-fluid" id="linkedin" />
+                        </a>
+                        <a href="mailto:macroprotech@outlook.com">
+                            <img src="images/email.png" alt="email" width="30" class="img-fluid" id="email" />
+                        </a>
+                    </form>
+                </div>
+            </nav>
+
+        </footer>
+        <script src="./scripts/jquery-3.4.1.min.js"></script>
+        <script src="./scripts/popper.min.js"></script>
+        <script src="./scripts/bootstrap-4.4.1.js"></script>
     </body>
 
 </html>

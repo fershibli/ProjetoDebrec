@@ -489,7 +489,8 @@ footer .footerNote span {
 		font-family: sans-serif;
 	}
 }
-.sectionTitle{
+
+.sectionTitle {
 	font-style: color #131212;
 }
 
@@ -502,4 +503,9 @@ footer .footerNote span {
     object-fit: cover;
     object-position: 0 66%;
     height: 400px;
+}
+#textoslogan{
+	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-size: xx-large;
 }
