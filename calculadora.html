@@ -39,7 +39,7 @@
                             value=""
                             size="10"
                             maxlength="9"
-                            onblur="pesquisacep(this.value);"
+                            onkeyup="cepMask(event);"
                         />
                     </div>
                     <div class="form-group col-4">
@@ -92,9 +92,9 @@
                         class="form-check-input"
                         type="radio"
                         name="tipoPropriedade"
-                        id="flexRadioDefault1"
+                        id="tipoPropriedadeCasa"
                     />
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <label class="form-check-label" for="tipoPropriedadeCasa">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             height="1em"
@@ -113,9 +113,12 @@
                         class="form-check-input"
                         type="radio"
                         name="tipoPropriedade"
-                        id="flexRadioDefault2"
+                        id="tipoPropriedadeApartamento"
                     />
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <label
+                        class="form-check-label"
+                        for="tipoPropriedadeApartamento"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             height="1em"
@@ -134,9 +137,12 @@
                         class="form-check-input"
                         type="radio"
                         name="tipoPropriedade"
-                        id="flexRadioDefault3"
+                        id="tipoPropriedadeFazenda"
                     />
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <label
+                        class="form-check-label"
+                        for="tipoPropriedadeFazenda"
+                    >
                         <i class="fa-solid fa-tractor"></i>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -161,9 +167,12 @@
                         class="form-check-input"
                         type="radio"
                         name="tamanhoPropriedade"
-                        id="flexRadioDefault1"
+                        id="tamanhoPropriedadeFamiliar"
                     />
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <label
+                        class="form-check-label"
+                        for="tamanhoPropriedadeFamiliar"
+                    >
                         Familiar
                     </label>
                 </div>
@@ -172,9 +181,12 @@
                         class="form-check-input"
                         type="radio"
                         name="tamanhoPropriedade"
-                        id="flexRadioDefault2"
+                        id="tamanhoPropriedadeMedia"
                     />
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <label
+                        class="form-check-label"
+                        for="tamanhoPropriedadeMedia"
+                    >
                         Médio
                     </label>
                 </div>
@@ -183,9 +195,12 @@
                         class="form-check-input"
                         type="radio"
                         name="tamanhoPropriedade"
-                        id="flexRadioDefault3"
+                        id="tamanhoPropriedadeGrande"
                     />
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <label
+                        class="form-check-label"
+                        for="tamanhoPropriedadeGrande"
+                    >
                         Grande
                     </label>
                 </div>

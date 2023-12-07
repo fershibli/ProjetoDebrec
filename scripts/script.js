@@ -22,6 +22,25 @@ function meu_callback(conteudo) {
     }
 }
 
+function cepMask(event) {
+    if (event.keyCode == 8) {
+        //backspace
+        return
+    }
+    let cepInput = event.target
+    let cepValue = cepInput.value
+    cepValue = cepValue.replace(/\D/g, "")
+
+    if (cepValue.length >= 5) {
+        cepValue = cepValue.substring(0, 5) + "-" + cepValue.substring(5)
+    }
+
+    event.target.value = cepValue
+    if (cepValue.length >= 9) {
+        pesquisacep(cepValue)
+    }
+}
+
 function pesquisacep(valor) {
     //Nova variável "cep" somente com dígitos.
     var cep = valor.replace(/\D/g, "")
