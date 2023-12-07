@@ -3,6 +3,51 @@ const bairroElement = document.getElementById("bairro")
 const cidadeElement = document.getElementById("cidade")
 const ufElement = document.getElementById("uf")
 
+const resultElement = document.getElementById("resultado-calculadora")
+const eolicaElement = document.getElementById("resultado-eolica")
+const biomassaElement = document.getElementById("resultado-biomassa")
+const solarElement = document.getElementById("resultado-solar")
+
+function define_excelente(tipoPropriedadeElement, tamanhoPropriedadeElement) {
+    const tipoPropriedade = tipoPropriedadeElement.value
+    const tamanhoPropriedade = tamanhoPropriedadeElement.value
+
+    let eolica = false
+    let biomassa = false
+    let solar = true
+
+    console.log(tipoPropriedade, tamanhoPropriedade)
+
+    console.log(tipoPropriedade == "apartamento")
+    console.log(tamanhoPropriedade == "familiar")
+
+    if (tipoPropriedade == "apartamento" && tamanhoPropriedade == "familiar") {
+        solar = false
+    }
+
+    if (tipoPropriedade == "fazenda" || tipoPropriedade == "casa") {
+        if (tamanhoPropriedade == "grande") {
+            eolica = true
+        }
+        if (tamanhoPropriedade == "medio" || tamanhoPropriedade == "grande") {
+            biomassa = true
+        }
+    }
+
+    resultElement.className = resultElement.className.replace("d-none", "")
+
+    if (eolica) {
+        eolicaElement.className += " excelente"
+    }
+    if (biomassa) {
+        biomassaElement.className += " excelente"
+    }
+    if (solar) {
+        solarElement.className += " excelente"
+        console.log(solarElement.className)
+    }
+}
+
 function validaFormulario() {
     if (
         !ruaElement.value &&
@@ -29,6 +74,31 @@ function validaFormulario() {
         alert("Selecione o tamanho da propriedade")
         return false
     }
+
+    limpa_excelente()
+
+    define_excelente(tipoPropriedadeElement, tamanhoPropriedadeElement)
+}
+
+function limpa_excelente() {
+    if (eolicaElement.className.indexOf("excelente") != -1) {
+        eolicaElement.className = eolicaElement.className.replace(
+            " excelente",
+            ""
+        )
+    }
+    if (biomassaElement.className.indexOf("excelente") != -1) {
+        biomassaElement.className = biomassaElement.className.replace(
+            " excelente",
+            ""
+        )
+    }
+    if (solarElement.className.indexOf("excelente") != -1) {
+        solarElement.className = solarElement.className.replace(
+            " excelente",
+            ""
+        )
+    }
 }
 
 // JavaScript Document
@@ -38,6 +108,10 @@ function limpa_formulário_cep() {
     bairroElement.value = ""
     cidadeElement.value = ""
     ufElement.value = ""
+    if (resultElement.className.indexOf("d-none") == -1) {
+        resultElement.className += " d-none"
+    }
+    limpa_excelente()
 }
 
 function meu_callback(conteudo) {

@@ -15,7 +15,7 @@ body {
 main {
     padding-left: 2em;
     padding-right: 2em;
-    padding-bottom: 70px;
+    padding-bottom: 10em;
 }
 
 /* section#equipe */
@@ -484,6 +484,18 @@ footer .footerNote span {
 
 .resultado-card {
     width: 300px;
+}
+
+.resultado-card img {
+    opacity: 0.5;
+}
+
+.excelente {
+    box-shadow: 0px 0px 10px 5px rgba(0, 255, 0, 0.75) !important;
+}
+
+.excelente img {
+    opacity: 1;
 }
 
 .home-image {
