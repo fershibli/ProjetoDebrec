@@ -1,81 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Home Page</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./styles/style.css"
+            media="screen"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./scripts/script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@1,300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Home Page</title>
-  <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
-  <link href="./styles/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./scripts/script.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-             
-</head>
+    <body>
+        <header>
+            <script
+                id="replace-with-header-navbar"
+                src="./scripts/header-nav.js"
+            ></script>
+        </header>
+        <main>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" id="textoslogan">
+                        <img
+                            src="images/logo.png"
+                            alt="Logo"
+                            width="100"
+                            height="100"
+                            class="d-inline-block align-text-center"
+                        />
+                        Semeando sustentabilidade, colhendo um futuro.
+                    </a>
+                </div>
+            </nav>
 
-<body>
-  <header>
-    <script id="replace-with-header-navbar" src="./scripts/header-nav.js"></script>
-  </header>
-  <main>
-
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" id="textoslogan">
-          <img src="images/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
-          Semeando sustentabilidade, colhendo um futuro.
-        </a>
-      </div>
-    </nav>
-
-    <div class="card mb-3">
-      <div>
-        <img src="images/imagem_home.png" class="home-image card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Bem vindos!</h5>
-          <p class="card-text">A Drebec é uma empresa dedicada à sustentabilidade fundada em 2023.</p>
-          <p class="card-text">Somos impulsionados por uma visão audaciosa de um futuro sustentável, onde as empresas
-            desempenham um papel crucial na preservação do nosso planeta.</p>
-          <p class="card-text"> Comprometemo-nos a liderar a mudança em direção a práticas empresariais mais ecológicas
-            e responsáveis.</p>
-          <p class="card-text">Na Drebec, nossa missão é proporcionar soluções sustentáveis inovadoras que abordem os
-            desafios ambientais e impulsionem o desenvolvimento econômico responsável. Buscamos ser uma força motriz na
-            transição para uma economia verde, criando valor duradouro para nossos clientes, colaboradores e o meio
-            ambiente.</p>
-          <p class="card-text">Nosso compromisso com a sustentabilidade é a espinha dorsal de todas as nossas operações.
-          </p>
-          <p class="card-text">Buscamos constantemente maneiras de minimizar nosso impacto ambiental e promover práticas
-            éticas em todos os aspectos de nossos negócios.</p>
-          <p class="card-text">Acreditamos que a inovação é a chave para superar os desafios ambientais. Investimos em
-            pesquisa e desenvolvimento para criar soluções pioneiras que ajudem nossos clientes a atingirem seus
-            objetivos de sustentabilidade.</p>
-          <p class="card-text">Reconhecemos nossa responsabilidade para com as comunidades em que operamos. Procuramos
-            criar parcerias locais, promover oportunidades de emprego sustentáveis e contribuir positivamente para o
-            bem-estar social.</p>
-          <p class="card-text">Mantemos um compromisso firme com a transparência em todas as nossas operações. Queremos
-            que nossos clientes e partes interessadas compreendam completamente nossos esforços e desafios à medida que
-            trabalhamos juntos para um futuro mais verde.</p>
-          <p class="card-text">Oferecemos uma gama abrangente de serviços de consultoria em energias sustentáveis.
-            Nossos especialistas estão comprometidos em orientar as empresas na jornada em direção a uma
-            operação mais responsável e eficiente.</p>
-          <p class="card-text">Na Drebec, estamos comprometidos em evoluir constantemente para enfrentar os desafios
-            emergentes da sustentabilidade. À medida que nos esforçamos para alcançar nossas metas e superar as
-            expectativas, convidamos todos a se juntarem a nós nessa jornada em direção a um futuro mais verde e
-            próspero para as gerações vindouras.</p>
-
-        </div>
-      </div>
-
-      <br>
-      <br>
-    </main>
-    <footer>
-        <script id="replace-with-footer-navbar" src="./scripts/footer-nav.js"></script>
-    </footer>
-    <script src="./scripts/jquery-3.4.1.min.js"></script>
-    <script src="./scripts/popper.min.js"></script>
-    <script src="./scripts/bootstrap-4.4.1.js"></script>
-</body>
-
+            <div class="card mb-3">
+                <div>
+                    <img
+                        src="images/imagem_home.png"
+                        class="home-image card-img-top"
+                        alt="..."
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Bem vindos!</h5>
+                        <p class="card-text">
+                            A Drebec é uma empresa dedicada à sustentabilidade
+                            fundada em 2023.
+                        </p>
+                        <p class="card-text">
+                            Somos impulsionados por uma visão audaciosa de um
+                            futuro sustentável, onde as empresas desempenham um
+                            papel crucial na preservação do nosso planeta.
+                        </p>
+                        <p class="card-text">
+                            Comprometemo-nos a liderar a mudança em direção a
+                            práticas empresariais mais ecológicas e
+                            responsáveis.
+                        </p>
+                        <p class="card-text">
+                            Na Drebec, nossa missão é proporcionar soluções
+                            sustentáveis inovadoras que abordem os desafios
+                            ambientais e impulsionem o desenvolvimento econômico
+                            responsável. Buscamos ser uma força motriz na
+                            transição para uma economia verde, criando valor
+                            duradouro para nossos clientes, colaboradores e o
+                            meio ambiente.
+                        </p>
+                        <p class="card-text">
+                            Nosso compromisso com a sustentabilidade é a espinha
+                            dorsal de todas as nossas operações.
+                        </p>
+                        <p class="card-text">
+                            Buscamos constantemente maneiras de minimizar nosso
+                            impacto ambiental e promover práticas éticas em
+                            todos os aspectos de nossos negócios.
+                        </p>
+                        <p class="card-text">
+                            Acreditamos que a inovação é a chave para superar os
+                            desafios ambientais. Investimos em pesquisa e
+                            desenvolvimento para criar soluções pioneiras que
+                            ajudem nossos clientes a atingirem seus objetivos de
+                            sustentabilidade.
+                        </p>
+                        <p class="card-text">
+                            Reconhecemos nossa responsabilidade para com as
+                            comunidades em que operamos. Procuramos criar
+                            parcerias locais, promover oportunidades de emprego
+                            sustentáveis e contribuir positivamente para o
+                            bem-estar social.
+                        </p>
+                        <p class="card-text">
+                            Mantemos um compromisso firme com a transparência em
+                            todas as nossas operações. Queremos que nossos
+                            clientes e partes interessadas compreendam
+                            completamente nossos esforços e desafios à medida
+                            que trabalhamos juntos para um futuro mais verde.
+                        </p>
+                        <p class="card-text">
+                            Oferecemos uma gama abrangente de serviços de
+                            consultoria em energias sustentáveis. Nossos
+                            especialistas estão comprometidos em orientar as
+                            empresas na jornada em direção a uma operação mais
+                            responsável e eficiente.
+                        </p>
+                        <p class="card-text">
+                            Na Drebec, estamos comprometidos em evoluir
+                            constantemente para enfrentar os desafios emergentes
+                            da sustentabilidade. À medida que nos esforçamos
+                            para alcançar nossas metas e superar as
+                            expectativas, convidamos todos a se juntarem a nós
+                            nessa jornada em direção a um futuro mais verde e
+                            próspero para as gerações vindouras.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <script
+                id="replace-with-footer-navbar"
+                src="./scripts/footer-nav.js"
+            ></script>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
