@@ -2,6 +2,35 @@ const ruaElement = document.getElementById("rua")
 const bairroElement = document.getElementById("bairro")
 const cidadeElement = document.getElementById("cidade")
 const ufElement = document.getElementById("uf")
+
+function validaFormulario() {
+    if (
+        !ruaElement.value &&
+        !bairroElement.value &&
+        !cidadeElement.value &&
+        !ufElement.value
+    ) {
+        alert("Preencha o campo CEP")
+        return false
+    }
+
+    const tipoPropriedadeElement = document.querySelector(
+        'input[name="tipoPropriedade"]:checked'
+    )
+    if (!tipoPropriedadeElement) {
+        alert("Selecione o tipo da propriedade")
+        return false
+    }
+
+    const tamanhoPropriedadeElement = document.querySelector(
+        'input[name="tamanhoPropriedade"]:checked'
+    )
+    if (!tamanhoPropriedadeElement) {
+        alert("Selecione o tamanho da propriedade")
+        return false
+    }
+}
+
 // JavaScript Document
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
