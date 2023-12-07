@@ -27,10 +27,10 @@
                 src="./scripts/header-nav.js"
             ></script>
         </header>
-        <main>
+        <main class="d-flex flex-column justify-content-center w-100">
             <form>
                 <div class="row">
-                    <div class="form-group col-4">
+                    <div class="form-group col-sm-6">
                         <label for="cep">Cep</label>
                         <input
                             type="text"
@@ -42,7 +42,7 @@
                             onkeyup="cepMask(event);"
                         />
                     </div>
-                    <div class="form-group col-4">
+                    <div class="form-group col-sm-6">
                         <label for="nome">Rua</label>
                         <input
                             type="text"
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-4">
+                    <div class="form-group col-md-4">
                         <label for="areaatuacao">Bairro</label>
                         <input
                             type="text"
@@ -63,7 +63,7 @@
                             disabled
                         />
                     </div>
-                    <div class="form-group col-4">
+                    <div class="form-group col-md-4">
                         <label for="areaatuacao">Cidade</label>
                         <input
                             type="text"
@@ -72,9 +72,7 @@
                             disabled
                         />
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-4">
+                    <div class="form-group col-md-4">
                         <label for="areaatuacao">Estado</label>
                         <input
                             type="text"
@@ -93,6 +91,7 @@
                         type="radio"
                         name="tipoPropriedade"
                         id="tipoPropriedadeCasa"
+                        value="casa"
                     />
                     <label class="form-check-label" for="tipoPropriedadeCasa">
                         <svg
@@ -114,6 +113,7 @@
                         type="radio"
                         name="tipoPropriedade"
                         id="tipoPropriedadeApartamento"
+                        value="apartamento"
                     />
                     <label
                         class="form-check-label"
@@ -138,6 +138,7 @@
                         type="radio"
                         name="tipoPropriedade"
                         id="tipoPropriedadeFazenda"
+                        value="fazenda"
                     />
                     <label
                         class="form-check-label"
@@ -168,6 +169,7 @@
                         type="radio"
                         name="tamanhoPropriedade"
                         id="tamanhoPropriedadeFamiliar"
+                        value="familiar"
                     />
                     <label
                         class="form-check-label"
@@ -182,6 +184,7 @@
                         type="radio"
                         name="tamanhoPropriedade"
                         id="tamanhoPropriedadeMedia"
+                        value="medio"
                     />
                     <label
                         class="form-check-label"
@@ -196,6 +199,7 @@
                         type="radio"
                         name="tamanhoPropriedade"
                         id="tamanhoPropriedadeGrande"
+                        value="grande"
                     />
                     <label
                         class="form-check-label"
@@ -217,37 +221,77 @@
                 </button>
             </div>
 
-            <div class="row">
-                <div
-                    class="container-energias-calculadas d-none"
-                    id="resultado-calculadora"
-                >
-                    <div>
-                        <img
-                            src="./images/solar.jpeg"
-                            alt="energia solar"
-                            width="300"
-                            height="180"
-                            class="image rounded"
-                        />
+            <div
+                class="container-energias-calculadas d-none"
+                id="resultado-calculadora"
+            >
+                <div id="resultado-eolica" class="card resultado-card">
+                    <img
+                        src="./images/eolica.jpeg"
+                        alt="energia eólica"
+                        width="300"
+                        height="180"
+                        class="image rounded"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Energia Eólica</h5>
+                        <p class="card-text">
+                            A energia eólica é a energia obtida através do
+                            vento, é considerada uma fonte de energia limpa e
+                            renovável.
+                        </p>
+                        <hr />
+                        <p class="card-text">
+                            Se você tiver um espaço de 1.000m² com ventos
+                            constantes de 20km/h, você pode gerar 5.000 kWh por
+                            ano.
+                        </p>
                     </div>
-                    <div>
-                        <img
-                            src="./images/eolica.jpeg"
-                            alt="energia eólica"
-                            width="300"
-                            height="180"
-                            class="image rounded"
-                        />
+                </div>
+                <div id="resultado-solar" class="card resultado-card">
+                    <img
+                        src="./images/solar.jpeg"
+                        alt="energia solar"
+                        width="300"
+                        height="180"
+                        class="image rounded"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Energia Solar</h5>
+                        <p class="card-text">
+                            A energia solar é uma fonte de energia renovável
+                            obtida através da luz do sol, pode ser convertida em
+                            energia térmica ou elétrica.
+                        </p>
+                        <hr />
+                        <p class="card-text">
+                            Se você tiver um telhado ou espaço que receba sol
+                            constante com uma área de 50m², você pode gerar
+                            5.000 kWh por ano.
+                        </p>
                     </div>
-                    <div>
-                        <img
-                            src="./images/biomassa.jpeg"
-                            alt="energia biomassa"
-                            width="300"
-                            height="180"
-                            class="image rounded"
-                        />
+                </div>
+                <div id="resultado-biomassa" class="card resultado-card">
+                    <img
+                        src="./images/biomassa.jpeg"
+                        alt="energia biomassa"
+                        width="300"
+                        height="180"
+                        class="image rounded"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Energia Biomassa</h5>
+                        <p class="card-text">
+                            A energia da biomassa é a energia obtida através da
+                            matéria orgânica, como restos de madeira, bagaço de
+                            cana-de-açúcar, resíduos de alimentos, entre outros.
+                        </p>
+                        <hr />
+                        <p class="card-text">
+                            Se você tiver um espaço de 1.000m² com uma produção
+                            de 5 toneladas de biomassa por ano, você pode gerar
+                            5.000 kWh por ano.
+                        </p>
                     </div>
                 </div>
             </div>
