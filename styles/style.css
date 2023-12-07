@@ -6,497 +6,478 @@
 
 html,
 body {
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 main {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-bottom: 70px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 70px;
 }
 
-/* Header */
-header {
-	text-align: center;
-	display: block;
+/* section#equipe */
+section#equipe {
+    text-align: center;
+    display: block;
 }
 
-header .profileLogo .logoPlaceholder {
-	background-color: rgba(208, 207, 207, 1.00);
-	width: 187px;
-	text-align: center;
+.profileLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-header .logoPlaceholder span {
-	width: 80px;
-	height: 22px;
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(255, 255, 255, 1.00);
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 53px;
+section#equipe .profileLogo .logoPlaceholder {
+    background-color: rgba(208, 207, 207, 1);
+    width: 187px;
+    text-align: center;
 }
 
-header .profilePhoto {
-	background-color: rgba(237, 237, 237, 1.00);
-	width: 259px;
-	border-radius: 50%;
-	height: 259px;
-	clear: both;
+section#equipe .logoPlaceholder span {
+    width: 80px;
+    height: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 53px;
 }
 
-header .profileHeader h1 {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146, 146, 146, 1.00);
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 24px;
+section#equipe .profilePhoto {
+    background-color: rgba(237, 237, 237, 1);
+    width: 259px;
+    border-radius: 50%;
+    height: 259px;
+    clear: both;
 }
 
-header .profileHeader h3 {
-	font-family: sans-serif;
-	color: rgba(146, 146, 146, 1.00);
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 24px;
+.section1Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#equipe .profileEquipe h1 {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+section#equipe .profileEquipe h3 {
+    font-family: sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 hr {
-	background-color: rgba(208, 207, 207, 1.00);
-	height: 1px;
+    background-color: rgba(208, 207, 207, 1);
+    height: 1px;
 }
 
-header .profileHeader p {
-	font-family: sans-serif;
-	color: rgba(146, 146, 146, 1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.8;
-	overflow-y: auto;
+section#equipe .profileEquipe p {
+    font-family: sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    overflow-y: auto;
 }
 
-header .socialNetworkNavBar {
-	text-align: center;
-	display: block;
-	margin-top: 60px;
-	clear: both;
+.socialNetworkNavBar {
+    text-align: center;
+    display: block;
+    margin-top: 60px;
+    clear: both;
+    margin-bottom: 60px;
 }
 
-header .socialNetworkNavBar .socialNetworkNav {
-	border-radius: 50%;
-	cursor: pointer;
+.socialNetworkNavBar .socialNetworkNav {
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-header .socialNetworkNavBar .socialNetworkNav img:hover {
-	opacity: 0.5;
+.socialNetworkNavBar .socialNetworkNav img:hover {
+    opacity: 0.5;
 }
 
 /* Main Content sections */
 .mainContent .section1 {
-	display: block;
+    display: block;
 }
 
 .section1 .sectionTitle,
 .section2 .sectionTitle {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146, 146, 146, 1.00);
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .section1 .sectionTitleRule,
 .section2 .sectionTitleRule {
-	margin: 0 3% 0 0;
-	float: left;
-	clear: both;
+    margin: 0 3% 0 0;
+    float: left;
+    clear: both;
 }
 
 .section1 .sectionTitleRule2,
 .section2 .sectionTitleRule2 {
-	background-color: rgba(208, 207, 207, 1.00);
-	height: 1px;
-	padding: 0px;
+    background-color: rgba(208, 207, 207, 1);
+    height: 1px;
+    padding: 0px;
 }
 
 .mainContent .section1 .section1Content {
-	font-family: ProximaNova;
-	font-size: 14px;
-	font-weight: 100;
-	color: rgba(208, 207, 207, 1.00);
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(208, 207, 207, 1);
 }
 
 .mainContent .section1 .section1Content span {
-	color: rgba(146, 146, 146, 1.00);
-	font-family: sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-family: sans-serif;
 }
 
 .section2 .sectionContentTitle {
-	font-family: sans-serif;
-	color: rgba(146, 146, 146, 1.00);
-	font-size: 18px;
-	font-weight: 700;
+    font-family: sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .section2 .sectionContentSubTitle {
-	font-family: sans-serif;
-	color: rgba(68, 67, 67, 1.00);
-	font-size: 14px;
-	font-weight: 400;
+    font-family: sans-serif;
+    color: rgba(68, 67, 67, 1);
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .section2 .sectionContent {
-	font-family: sans-serif;
-	color: rgba(146, 146, 146, 1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.8;
+    font-family: sans-serif;
+    color: rgba(146, 146, 146, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .mainContent {
-	display: block;
+    display: block;
 }
 
 .mainContent .externalResourcesNav .externalResources {
-	background-color: rgba(208, 207, 207, 1.00);
-	display: inline-block;
-	text-align: center;
-	margin-top: 0px;
-	padding-top: 3%;
-	cursor: pointer;
+    background-color: rgba(208, 207, 207, 1);
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 3%;
+    cursor: pointer;
 }
 
 .mainContent .externalResourcesNav .externalResources:hover {
-	background-color: rgba(153, 153, 153, 1.00);
+    background-color: rgba(153, 153, 153, 1);
 }
 
 .externalResourcesNav .externalResources a {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(255, 255, 255, 1.00);
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
 }
 
 .stretch {
-	content: '';
-	display: inline-block;
-	margin-left: 2%;
-	margin-right: 2%;
+    content: "";
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /* Footer */
 footer .footerDisclaimer {
-	font-family: sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: rgba(104, 103, 103, 1.00);
-	font-weight: 700;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(104, 103, 103, 1);
+    font-weight: 700;
 }
 
 footer .footerDisclaimer span {
-	color: rgba(181, 178, 178, 1.00);
-	font-weight: 400;
+    color: rgba(181, 178, 178, 1);
+    font-weight: 400;
 }
 
 footer .footerNote {
-	font-family: sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	color: rgba(104, 103, 103, 1.00);
-	font-weight: 700;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(104, 103, 103, 1);
+    font-weight: 700;
 }
 
 footer .footerNote span {
-	color: rgba(181, 178, 178, 1.00);
-	font-weight: 400;
+    color: rgba(181, 178, 178, 1);
+    font-weight: 400;
 }
 
 /* Media query for Mobile devices*/
-@media only screen and (min-width : 285px) and (max-width : 480px) {
+@media only screen and (min-width: 285px) and (max-width: 480px) {
+    /* section#equipe */
+    section#equipe {
+        width: 100%;
+        float: none;
+    }
 
-	/* Header */
-	header {
-		width: 100%;
-		float: none;
-	}
+    section#equipe .profilePhoto {
+        display: inline-block;
+    }
 
-	header .profileLogo .logoPlaceholder {
-		display: inline-block;
-	}
+    section#equipe .profileEquipe {
+        text-align: center;
+    }
 
-	header .profilePhoto {
-		display: inline-block;
-	}
+    section#equipe .profileEquipe p {
+        text-align: justify;
+    }
 
-	header .profileHeader {
-		text-align: center;
-		margin-top: 10%;
-	}
+    .socialNetworkNavBar {
+        text-align: center;
+        display: block;
+        margin-top: 60px;
+        clear: both;
+        margin-bottom: 60px;
+    }
 
-	header .profileHeader p {
-		text-align: justify;
-	}
+    .socialNetworkNavBar .socialNetworkNav {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        margin-right: 23px;
+    }
 
-	header .socialNetworkNavBar {
-		text-align: center;
-		display: block;
-		margin-top: 60px;
-		clear: both;
-		margin-bottom: 15%;
-	}
+    /* Main content sections */
+    .mainContent .section1 {
+        text-align: center;
+        margin-bottom: 10%;
+    }
 
-	header .socialNetworkNavBar .socialNetworkNav {
-		width: 60px;
-		height: 60px;
-		display: inline-block;
-		margin-right: 23px;
-	}
+    .section1 .section1Title,
+    .section2 .section1Title {
+        text-align: center;
+    }
 
-	/* Main content sections */
-	.mainContent .section1 {
-		text-align: center;
-		margin-bottom: 10%;
-	}
+    .section1 .sectionTitleRule,
+    .section2 .sectionTitleRule {
+        width: 100%;
+    }
 
-	.section1 .section1Title,
-	.section2 .section1Title {
-		text-align: center;
-	}
+    .section1 .sectionTitleRule2,
+    .section2 .sectionTitleRule2 {
+        display: none;
+    }
 
-	.section1 .sectionTitleRule,
-	.section2 .sectionTitleRule {
-		width: 100%;
-	}
+    .mainContent .section2 {
+        display: block;
+        text-align: center;
+    }
 
-	.section1 .sectionTitleRule2,
-	.section2 .sectionTitleRule2 {
-		display: none;
-	}
+    .section2 .section2Content {
+        margin-top: 10%;
+        text-align: justify;
+        margin-bottom: 10%;
+    }
 
-	.mainContent .section1 .section1Content {
-		display: inline-block;
-		text-align: left;
-		font-family: sans-serif;
-		text-align: justify;
-	}
+    .mainContent .externalResourcesNav {
+        margin-bottom: 10%;
+    }
 
-	.mainContent .section2 {
-		display: block;
-		text-align: center;
-	}
+    .mainContent .externalResourcesNav .externalResources {
+        width: 100%;
+        height: 35px;
+    }
 
-	.section2 .section2Content {
-		margin-top: 10%;
-		text-align: justify;
-		margin-bottom: 10%;
-	}
-
-	.mainContent .externalResourcesNav {
-		margin-bottom: 10%;
-	}
-
-	.mainContent .externalResourcesNav .externalResources {
-		width: 100%;
-		height: 35px;
-	}
-
-	/* Footer */
-	footer {
-		display: block;
-		text-align: center;
-		font-family: sans-serif;
-	}
+    /* Footer */
+    footer {
+        display: block;
+        text-align: center;
+        font-family: sans-serif;
+    }
 }
 
 /* Media Query for Tablets */
-@media only screen and (min-width : 481px) and (max-width : 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    /* section#equipe */
+    section#equipe {
+        width: 100%;
+        float: none;
+    }
 
-	/* Header */
-	header {
-		width: 100%;
-		float: none;
-	}
+    section#equipe .profileLogo .logoPlaceholder {
+        font-family: "Montserrat", sans-serif;
+    }
 
-	header .profileLogo .logoPlaceholder {
-		display: inline-block;
-		font-family: 'Montserrat', sans-serif;
-	}
+    section#equipe .profilePhoto {
+        float: left;
+        clear: both;
+        margin-right: 3%;
+        margin-top: 5%;
+    }
 
-	header .profilePhoto {
-		float: left;
-		clear: both;
-		margin-right: 3%;
-		margin-top: 5%;
-	}
+    section#equipe .profileEquipe {
+        text-align: left;
+    }
 
-	header .profileHeader {
-		text-align: left;
-		margin-top: 7%;
-	}
+    .socialNetworkNavBar .socialNetworkNav {
+        width: 74px;
+        height: 74px;
+        display: inline-block;
+        margin-right: 23px;
+    }
 
-	header .socialNetworkNavBar .socialNetworkNav {
-		width: 74px;
-		height: 74px;
-		display: inline-block;
-		margin-right: 23px;
-	}
+    /* Main content and sections */
+    .section1 .section1Title,
+    .section2 .section1Title {
+        text-align: center;
+    }
 
-	/* Main content and sections */
-	.section1 .section1Title,
-	.section2 .section1Title {
-		text-align: center;
-	}
+    .section1 .sectionTitleRule,
+    .section2 .sectionTitleRule {
+        width: 100%;
+    }
 
-	.section1 .sectionTitleRule,
-	.section2 .sectionTitleRule {
-		width: 100%;
-	}
+    .section1 .sectionTitleRule2,
+    .section2 .sectionTitleRule2 {
+        display: none;
+    }
 
-	.section1 .sectionTitleRule2,
-	.section2 .sectionTitleRule2 {
-		display: none;
-	}
+    .mainContent .section2 {
+        clear: both;
+    }
 
-	.mainContent .section1 .section1Content {
-		display: block;
-		margin: 0% 0% 0% 20%;
-		font-family: sans-serif;
-		margin-top: 5%;
-		margin-bottom: 5%;
-	}
+    .section2 .section2Content {
+        font-family: sans-serif;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
-	.mainContent .section2 {
-		clear: both;
-	}
+    .mainContent .externalResourcesNav {
+        margin-left: 20%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        padding-top: 0px;
+        clear: both;
+    }
 
-	.section2 .section2Content {
-		padding: 0px;
-		margin-left: 20%;
-		font-family: sans-serif;
-		margin-top: 5%;
-		margin-bottom: 5%;
-	}
+    .mainContent .externalResourcesNav .externalResources {
+        width: 199px;
+        height: 48px;
+        margin-top: 5%;
+    }
 
-	.mainContent .externalResourcesNav {
-		margin-left: 20%;
-		margin-top: 40px;
-		margin-bottom: 40px;
-		text-align: center;
-		padding-top: 0px;
-		clear: both;
-	}
+    /* Footer */
+    footer .footerDisclaimer {
+        float: left;
+        margin-left: 3%;
+        font-family: sans-serif;
+    }
 
-	.mainContent .externalResourcesNav .externalResources {
-		width: 199px;
-		height: 48px;
-		margin-top: 5%;
-	}
-
-	/* Footer */
-	footer .footerDisclaimer {
-		float: left;
-		margin-left: 3%;
-		font-family: sans-serif;
-	}
-
-	footer .footerNote {
-		float: right;
-		margin-right: 3%;
-		font-family: sans-serif;
-	}
+    footer .footerNote {
+        float: right;
+        margin-right: 3%;
+        font-family: sans-serif;
+    }
 }
 
 /* Desktops and laptops  */
-@media only screen and (min-width:1025px) {
+@media only screen and (min-width: 1025px) {
+    /* section#equipe */
+    section#equipe .profileLogo .logoPlaceholder {
+        margin-bottom: 10px;
+    }
 
-	/* Header */
-	header .profileLogo .logoPlaceholder {
-		float: left;
-		margin-bottom: 50px;
-	}
+    section#equipe .profilePhoto {
+        float: left;
+        clear: both;
+        margin-right: 3%;
+    }
 
-	header .profilePhoto {
-		float: left;
-		clear: both;
-		margin-right: 3%;
-	}
+    section#equipe .profileEquipe {
+        text-align: left;
+    }
 
-	header .profileHeader {
-		text-align: left;
-		padding-top: 10%;
-	}
+    .socialNetworkNavBar .socialNetworkNav {
+        width: 74px;
+        height: 74px;
+        display: inline-block;
+        margin-right: 23px;
+    }
 
-	header .socialNetworkNavBar .socialNetworkNav {
-		width: 74px;
-		height: 74px;
-		display: inline-block;
-		margin-right: 23px;
-	}
+    /* Main content sections */
+    .section1 .sectionTitleRule,
+    .section2 .sectionTitleRule {
+        width: 22.5%;
+    }
 
-	/* Main content sections */
-	.section1 .sectionTitleRule,
-	.section2 .sectionTitleRule {
-		width: 22.5%;
-	}
+    .mainContent .section1 .section1Content {
+        font-family: sans-serif;
+    }
 
-	.mainContent .section1 .section1Content {
-		display: block;
-		margin-top: 0%;
-		margin-right: 0%;
-		margin-left: 26%;
-		margin-bottom: 0%;
-		font-family: sans-serif;
-	}
+    .mainContent .section2 {
+        clear: both;
+    }
 
-	.mainContent .section2 {
-		clear: both;
-	}
+    .section2 .section2Content {
+        font-family: sans-serif;
+    }
 
-	.section2 .section2Content {
-		padding: 0px;
-		margin-left: 26%;
-		font-family: sans-serif;
-	}
+    .mainContent .externalResourcesNav {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        padding-top: 0px;
+        clear: both;
+    }
 
-	.mainContent .externalResourcesNav {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		text-align: center;
-		padding-top: 0px;
-		clear: both;
-	}
+    .mainContent .externalResourcesNav .externalResources {
+        width: 199px;
+        height: 48px;
+    }
 
-	.mainContent .externalResourcesNav .externalResources {
-		width: 199px;
-		height: 48px;
-	}
+    /* Footer */
+    footer .footerDisclaimer {
+        float: left;
+        margin-left: 3%;
+        font-family: sans-serif;
+    }
 
-	/* Footer */
-	footer .footerDisclaimer {
-		float: left;
-		margin-left: 3%;
-		font-family: sans-serif;
-	}
-
-	footer .footerNote {
-		float: right;
-		margin-right: 3%;
-		font-family: sans-serif;
-	}
+    footer .footerNote {
+        float: right;
+        margin-right: 3%;
+        font-family: sans-serif;
+    }
 }
 
 .sectionTitle {
-	font-style: color #131212;
+    font-style: color #131212;
 }
 
 .container-energias-calculadas {
-	display: flex;
-	justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .home-image {
@@ -504,8 +485,8 @@ footer .footerNote span {
     object-position: 0 66%;
     height: 400px;
 }
-#textoslogan{
-	font-family: 'Bebas Neue', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-size: xx-large;
+#textoslogan {
+    font-family: "Bebas Neue", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: xx-large;
 }
