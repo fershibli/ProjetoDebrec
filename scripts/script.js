@@ -7,6 +7,7 @@ const resultElement = document.getElementById("resultado-calculadora")
 const eolicaElement = document.getElementById("resultado-eolica")
 const biomassaElement = document.getElementById("resultado-biomassa")
 const solarElement = document.getElementById("resultado-solar")
+const resultTextElement = document.getElementById("resultado-texto")
 
 function define_excelente(tipoPropriedadeElement, tamanhoPropriedadeElement) {
     const tipoPropriedade = tipoPropriedadeElement.value
@@ -36,16 +37,39 @@ function define_excelente(tipoPropriedadeElement, tamanhoPropriedadeElement) {
 
     resultElement.className = resultElement.className.replace("d-none", "")
 
+    const energiasLista = []
+
     if (eolica) {
         eolicaElement.className += " excelente"
+        energiasLista.push("eólica")
     }
     if (biomassa) {
         biomassaElement.className += " excelente"
+        energiasLista.push("biomassa")
     }
     if (solar) {
         solarElement.className += " excelente"
-        console.log(solarElement.className)
+        energiasLista.push("solar")
     }
+
+    resultTextElement.className = resultTextElement.className.replace(
+        "d-none",
+        ""
+    )
+
+    if (energiasLista.length == 0) {
+        resultTextElement.innerHTML =
+            "A sua propriedade não é adequada para a geração de energia alternativa."
+        return
+    }
+
+    let energiasTexto = energiasLista.join(", ")
+
+    energiasTexto = energiasTexto.replace(/,([^,]*)$/, " e $1")
+
+    resultTextElement.innerHTML = `A sua propriedade é excelente para a geração de energia${
+        energiasLista.length > 1 ? "s" : ""
+    }: ${energiasTexto}.`
 }
 
 function validaFormulario() {
@@ -81,6 +105,9 @@ function validaFormulario() {
 }
 
 function limpa_excelente() {
+    if (resultTextElement.className.indexOf("d-none") == -1) {
+        resultTextElement.className += " d-none"
+    }
     if (eolicaElement.className.indexOf("excelente") != -1) {
         eolicaElement.className = eolicaElement.className.replace(
             " excelente",

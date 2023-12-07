@@ -475,7 +475,8 @@ footer .footerNote span {
     font-style: color #131212;
 }
 
-#resultado-calculadora {
+#resultado-calculadora,
+#resultado-texto {
     padding-top: 2em;
 }
 
