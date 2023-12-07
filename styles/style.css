@@ -475,6 +475,10 @@ footer .footerNote span {
     font-style: color #131212;
 }
 
+#resultado-calculadora {
+    padding-top: 2em;
+}
+
 .container-energias-calculadas {
     display: flex;
     justify-content: space-evenly;
@@ -483,7 +487,11 @@ footer .footerNote span {
 }
 
 .resultado-card {
-    width: 300px;
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    margin: 1em !important;
+    padding: 0 !important;
 }
 
 .resultado-card img {
