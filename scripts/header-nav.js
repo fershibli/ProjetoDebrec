@@ -4,7 +4,7 @@ fetch("../header-nav.html")
         let old_element = document.querySelector(
             "script#replace-with-header-navbar"
         )
-        let new_element = DOMParser()
+        let new_element = new DOMParser()
             .parseFromString(data, "text/html")
             .querySelector("nav")
         old_element.parentNode.replaceChild(new_element, old_element)
