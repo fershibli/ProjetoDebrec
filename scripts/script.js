@@ -23,12 +23,15 @@ function meu_callback(conteudo) {
 }
 
 function cepMask(event) {
+    let cepInput = event.target
+    let cepValue = cepInput.value
+    if (cepValue.length < 9) {
+        limpa_formulário_cep()
+    }
     if (event.keyCode == 8) {
         //backspace
         return
     }
-    let cepInput = event.target
-    let cepValue = cepInput.value
     cepValue = cepValue.replace(/\D/g, "")
 
     if (cepValue.length >= 5) {
