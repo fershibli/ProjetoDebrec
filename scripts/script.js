@@ -1,19 +1,23 @@
+const ruaElement = document.getElementById("rua")
+const bairroElement = document.getElementById("bairro")
+const cidadeElement = document.getElementById("cidade")
+const ufElement = document.getElementById("uf")
 // JavaScript Document
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
-    document.getElementById("rua").value = ""
-    document.getElementById("bairro").value = ""
-    document.getElementById("cidade").value = ""
-    document.getElementById("uf").value = ""
+    ruaElement.value = ""
+    bairroElement.value = ""
+    cidadeElement.value = ""
+    ufElement.value = ""
 }
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
         //Atualiza os campos com os valores.
-        document.getElementById("rua").value = conteudo.logradouro
-        document.getElementById("bairro").value = conteudo.bairro
-        document.getElementById("cidade").value = conteudo.localidade
-        document.getElementById("uf").value = conteudo.uf
+        ruaElement.value = conteudo.logradouro
+        bairroElement.value = conteudo.bairro
+        cidadeElement.value = conteudo.localidade
+        ufElement.value = conteudo.uf
     } //end if.
     else {
         //CEP não Encontrado.
